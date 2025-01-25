@@ -22,9 +22,11 @@ const initialValues = {
 
 const MeetingTypeList = () => {
   const router = useRouter();
+
   const [meetingState, setMeetingState] = useState<
     "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
   >(undefined);
+
   const [values, setValues] = useState(initialValues);
   const [callDetail, setCallDetail] = useState<Call>();
   const client = useStreamVideoClient();
@@ -81,7 +83,7 @@ const MeetingTypeList = () => {
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
-        description="via invitation link"
+        description="Via invitation link"
         className="bg-blue-1"
         handleClick={() => setMeetingState("isJoiningMeeting")}
       />
@@ -156,7 +158,9 @@ const MeetingTypeList = () => {
         title="Type the link here"
         className="text-center"
         buttonText="Join Meeting"
-        handleClick={() => router.push(values.link)}
+        handleClick={() =>
+          router.push(window.location.protocol + "//" + values.link)
+        }
       >
         <Input
           placeholder="Meeting link"
