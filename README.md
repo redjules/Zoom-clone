@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Tech stack
+
+Zoom clone with Next.js 14, TypeScript, Shadcn, Tailwind CSS, Clerk Auth
+
+## Final app
+https://zoom-clone-vn35.vercel.app/
 
 ## Getting Started
 
