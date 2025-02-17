@@ -5,6 +5,10 @@ Zoom clone with Next.js 14, TypeScript, Shadcn, Tailwind CSS, Clerk Auth
 ## Final app
 https://zoom-clone-vn35.vercel.app/
 
+## Screenshot
+
+![Screenshot 2025-02-17 at 01 41 09](https://github.com/user-attachments/assets/dca68c3d-1c41-4d66-82a9-504506877dec)
+
 ## Getting Started
 
 First, run the development server:
